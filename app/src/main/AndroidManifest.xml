@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".layout6"
+            android:name=".Activity_01_SPLASH"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -21,7 +21,14 @@
         </activity>
         <activity android:name=".layout5" />
         <activity android:name=".layout7" />
-        <activity android:name=".layout8"></activity>
+        <activity android:name=".layout8" />
+        <activity android:name=".Activity_13_SUPPORT" />
+        <activity android:name=".Activity_14_PROFILE" />
+        <activity android:name=".layout6" />
+        <activity android:name=".Activity_15_OFFERS" />
+        <activity android:name=".Activity_2_LOGIN" />
+        <activity android:name=".Activity_3_REGISTER" />
+        <activity android:name=".Activity_4_OTP"></activity>
     </application>
 
 </manifest>

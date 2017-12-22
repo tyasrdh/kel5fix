@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/rounded_btn">
+
+        <ImageView
+            android:id="@+id/gambar1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:id="@+id/liner1"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gambar1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/keterangan"
+                android:layout_width="wrap_content"
+                android:textColor="#ffff"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Judul"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:paddingRight="5dp"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gambar1"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+
+            >
+
+            <TextView
+                android:id="@+id/garis1"
+                android:layout_width="wrap_content"
+                android:textColor="#ffff"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="------------------"
+                android:textSize="10sp"/>
+
+
+            <TextView
+                android:id="@+id/diskon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:layout_below="@id/garis1"
+                android:layout_centerHorizontal="true"
+                android:text="50%" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/garis2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/diskon"
+                android:textColor="#ffff"
+                android:textSize="10sp"
+                android:text="------------------" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.portal.kel5.Activity_13_SUPPORT">
+
+    <RelativeLayout
+        android:id="@+id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="#00FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="#ffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SUPPORT"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/isi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header1"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tes1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/prof1"
+                android:background="@drawable/rounded_btn2"
+                android:padding="10dp"
+                android:text="How may i can help you ?"
+                android:textColor="#000" />
+
+            <ImageView
+                android:id="@+id/prof1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/tes1"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/prof2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/tes2"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tes2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/prof2"
+                android:background="@drawable/rounded_btn2"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmod tempor"
+                android:textColor="#000" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tes3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/prof4"
+                android:background="@drawable/rounded_btn2"
+                android:padding="10dp"
+                android:text="How may i can help you ?"
+                android:textColor="#000" />
+
+            <ImageView
+                android:id="@+id/prof4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/tes3"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/prof3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/tes4"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tes4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/prof3"
+                android:background="@drawable/rounded_btn2"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmod tempor"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffff"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/garis"
+            android:gravity="left"
+            android:hint="Write your Message"
+            android:padding="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/edt1"
+            android:background="@drawable/rounded_btn"
+            android:drawableLeft="@drawable/ic_send_white_24dp"
+            android:padding="5dp"
+            android:text="SEND"
+            android:textSize="12sp"
+            android:onClick="send"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

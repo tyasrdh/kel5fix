@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.portal.kel5.Activity_2_LOGIN">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background2" />
+
+    <ImageView
+        android:id="@+id/logo_in"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/owl2" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/textmail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#c0c0c0" />
+
+
+        <EditText
+            android:id="@+id/textpassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textmail2"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#ffffff"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#c0c0c0" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/tombolin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@id/content2"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/rounded_btn"
+        android:text="SIGNIN"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:text="New here?"
+        android:textColor="#ffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-30dp"
+        android:layout_toRightOf="@+id/tvNew"
+        android:padding="20dp"
+        android:onClick="tvSIGNUP"
+        android:text="SIGN UP"
+        android:textColor="#ffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="20dp"
+        android:text="Forgot password?"
+        android:textColor="#ffff" />
+
+</RelativeLayout>
