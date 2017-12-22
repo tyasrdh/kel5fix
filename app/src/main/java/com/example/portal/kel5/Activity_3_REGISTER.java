@@ -25,21 +25,8 @@ public class Activity_3_REGISTER extends AppCompatActivity {
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String unameKey = uname.getText().toString();
-                String passwordKey = password.getText().toString();
-                if ((unameKey.contains("arifahfariza@example.com")&&(passwordKey.contains("******")))) {
-                    Toast.makeText(getApplicationContext(), "Sign in sukses", Toast.LENGTH_SHORT).show();
-                    //Intent intents = new Intent(Activity_3_REGISTER.this,activity_4_OTP.class);
-                    //startActivity(intents);
-                }
-
-                else if ((unameKey.matches("")||(passwordKey.matches("")))) {
-                    Toast.makeText(getApplicationContext(), "Silakan masukkan email dan password", Toast.LENGTH_SHORT).show();
-                }
-
-                else {
-                    Toast.makeText (getApplicationContext(), "email atau password salah. sign in gagal", Toast.LENGTH_SHORT).show();
-                }
+                Intent intents = new Intent(Activity_3_REGISTER.this,Activity_4_OTP.class);
+                startActivity(intents);
 
             }
 
@@ -50,7 +37,6 @@ public class Activity_3_REGISTER extends AppCompatActivity {
     {
         Intent sd = new Intent(this,Activity_2_LOGIN.class);
         startActivity(sd);
-
     }
 
     public void btnSign(View view) {

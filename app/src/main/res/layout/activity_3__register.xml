@@ -126,7 +126,6 @@
         android:layout_marginTop="-30dp"
         android:background="@drawable/rounded_btn"
         android:text="SIGNUP"
-
         android:textColor="#ffffff" />
 
     <TextView
