@@ -1,5 +1,6 @@
 package com.example.portal.kel5;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,14 +13,33 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class layout6 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    Button button;
+
+    private void initializeLayout(){
+        button = (Button) findViewById(R.id.button);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout6);
+
+        initializeLayout();
+
+        Intent intent = getIntent();
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent();
+                intent.setClass(layout6.this, layout7.class);
+                startActivity(intent);
+            }
+        });
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -27,7 +47,7 @@ public class layout6 extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Kelompok Lima", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -99,3 +119,4 @@ public class layout6 extends AppCompatActivity
         return true;
     }
 }
+

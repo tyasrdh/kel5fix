@@ -189,6 +189,16 @@
                         android:layout_below="@+id/namaFood1"
                         android:text="XXXX XXXX XXXX 3210"
                         android:textSize="10sp" />
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_marginTop="90dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/rounded_btn"
+                        android:text="Next"
+                        android:textColor="#ffff" />
 
 
                 </RelativeLayout>

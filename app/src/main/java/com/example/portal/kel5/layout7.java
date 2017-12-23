@@ -27,7 +27,7 @@ public class layout7 extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent();
-                intent.setClass(layout7.this, layout8.class);
+                intent.setClass(layout7.this, Activity_9_CART.class);
                 startActivity(intent);
             }
         });

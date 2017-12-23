@@ -28,7 +28,6 @@
         <activity android:name=".Activity_15_OFFERS" />
         <activity android:name=".Activity_2_LOGIN" />
         <activity android:name=".Activity_3_REGISTER" />
-        <activity android:name=".Activity_4_OTP" />
         <activity android:name=".Activity_9_CART" />
         <activity android:name=".Activity_10_ORDER" />
         <activity android:name=".Activity_11_ORDERDETAILS" />

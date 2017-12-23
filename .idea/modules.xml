@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://G:\kel5fix\app\app.iml" filepath="G:\kel5fix\app\app.iml" />
       <module fileurl="file://E:\Documents\lama\Kampus\SPNJ-Latihan\tese\kel5fix\kel5.iml" filepath="E:\Documents\lama\Kampus\SPNJ-Latihan\tese\kel5fix\kel5.iml" />
       <module fileurl="file://$PROJECT_DIR$/kel5fix.iml" filepath="$PROJECT_DIR$/kel5fix.iml" />
+      <module fileurl="file://G:\kel5fix\kel5fix.iml" filepath="G:\kel5fix\kel5fix.iml" />
     </modules>
   </component>
 </project>

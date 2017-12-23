@@ -25,22 +25,25 @@ public class Activity_3_REGISTER extends AppCompatActivity {
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intents = new Intent(Activity_3_REGISTER.this,Activity_4_OTP.class);
+                Intent intents = new Intent(Activity_3_REGISTER.this, layout5.class);
                 startActivity(intents);
+
 
             }
 
+            ;
         });
-    }
 
-    public void tvSIGN(View view)
-    {
-        Intent sd = new Intent(this,Activity_2_LOGIN.class);
-        startActivity(sd);
-    }
+        //public void tvSIGNUP(View view)
+        // {
+        //   Intent sd = new Intent(this,Activity_2_LOGIN.class);
+        //  startActivity(sd);
+//
+        //  }
 
-    public void btnSign(View view) {
-        Intent sds = new Intent(this,Activity_2_LOGIN.class);
-        startActivity(sds);
-    }
-}
+        //public void btnSign(View view) {
+        //  Intent sds = new Intent(this,Activity_2_LOGIN.class);
+        // startActivity(sds);
+        //}
+//}
+    }}
